@@ -269,11 +269,18 @@ const renderOfHeader = function(trElement) {
     trElement.append(thElement);
 }
 
-const deleteObject = function(userobject, usersArray) {
+const deleteObject = function(userobject, usersArray, element) {
     usersArray.splice(userobject.id, 1);
+    for (const object of usersArray) {
+        if (object.id >= userobject.id) {
+            --object.id;
+        }
+    }
+    element.parentElement.remove();
+    renderOfTable(usersArray, coll);
 }
 
-const renderOfButton = function(trElement, userobject, usersArray) {
+const renderOfButton = function(trElement, userobject, usersArray, element) {
     let buttonElement = document.createElement('button');
     let tdElement = document.createElement('td');
     buttonElement.textContent = this.form;
@@ -281,9 +288,8 @@ const renderOfButton = function(trElement, userobject, usersArray) {
     tdElement.append(buttonElement);
     trElement.append(tdElement);
     buttonElement.onclick = () => {
-        deleteObject(userobject, usersArray);
+        deleteObject(userobject, usersArray, element);
     }
-
 }
 
 
@@ -354,7 +360,7 @@ const setup = (usersArray, coll, element) => {
                 object.renderOfObject(trElement, userobject);
             } else {
                 map.set(object.key, object.label)
-                object.renderOfButton(trElement, userobject, usersArray);
+                object.renderOfButton(trElement, userobject, usersArray, element);
             }
         }
         ++index;
