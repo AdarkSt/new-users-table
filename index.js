@@ -275,16 +275,26 @@ const deleteObject = function(index, usersArray, element) {
     renderOfTable(usersArray, coll);
 }
 
-const renderOfButton = function(trElement, userobject, usersArray, element) {
-    let buttonElement = document.createElement('button');
+const editObject = function() {
+
+}
+
+const renderOfButton = function(trElement, index, usersArray, element, countOfButtons) {
     let tdElement = document.createElement('td');
-    buttonElement.textContent = this.form;
-    buttonElement.className = 'button';
-    tdElement.append(buttonElement);
-    trElement.append(tdElement);
-    buttonElement.onclick = () => {
-        deleteObject(userobject, usersArray, element);
+    for (let i = 0; i < countOfButtons; ++i) {
+        let buttonElement = document.createElement('button');
+        buttonElement.textContent = this.form[i];
+        buttonElement.className = 'button';
+        tdElement.append(buttonElement);
+        buttonElement.onclick = () => {
+            if (buttonElement.textContent == "Delete") {
+                deleteObject(index, usersArray, element);
+            } else if (buttonElement.textContent == "Edit") {
+                editObject();
+            }
+        }
     }
+    trElement.append(tdElement);
 }
 
 
@@ -324,12 +334,11 @@ const coll = [{
     {
         key: 'actions',
         label: 'actions',
-        form: 'Delete',
+        form: ['Edit', 'Delete'],
         renderOfObject: renderOfObject,
         renderOfHeader: renderOfHeader,
         renderOfButton: renderOfButton,
-    }
-
+    },
 ]
 
 
@@ -355,7 +364,7 @@ const setup = (usersArray, coll, element) => {
                 object.renderOfObject(trElement, userobject);
             } else {
                 map.set(object.key, object.label)
-                object.renderOfButton(trElement, index, usersArray, element);
+                object.renderOfButton(trElement, index, usersArray, element, 2);
             }
         }
         ++index;
