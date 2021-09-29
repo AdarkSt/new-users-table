@@ -1,5 +1,5 @@
 let usersArray = [{
-        id: 0,
+        id: 45,
         name: "Keeley",
         surname: "Bosco",
         age: 36,
@@ -7,7 +7,7 @@ let usersArray = [{
         email: "keeleybosco@gmail.com",
     },
     {
-        id: 1,
+        id: 86,
         name: "Rubye",
         surname: "Jerde",
         age: 25,
@@ -15,7 +15,7 @@ let usersArray = [{
         email: "rubyejerde@gmail.com",
     },
     {
-        id: 2,
+        id: 10,
         name: "Darian",
         surname: "Breitenberg",
         age: 75,
@@ -23,7 +23,7 @@ let usersArray = [{
         email: "darianbreitenburg@gmail.com",
     },
     {
-        id: 3,
+        id: 98,
         name: "Celine",
         surname: "Ankunding",
         age: 23,
@@ -31,7 +31,7 @@ let usersArray = [{
         email: "celineankuding@gmail.com",
     },
     {
-        id: 4,
+        id: 63,
         name: "Araceli",
         surname: "Lang",
         age: 45,
@@ -39,7 +39,7 @@ let usersArray = [{
         email: "aracelilang@gmail.com",
     },
     {
-        id: 5,
+        id: 50,
         name: "Esteban",
         surname: "Johnson",
         age: 64,
@@ -47,7 +47,7 @@ let usersArray = [{
         email: "estebanjohnson@gmail.com",
     },
     {
-        id: 6,
+        id: 41,
         name: "Everette",
         surname: "Swift",
         age: 65,
@@ -55,7 +55,7 @@ let usersArray = [{
         email: "everetteswift@gmail.com",
     },
     {
-        id: 7,
+        id: 28,
         name: "Terrell",
         surname: "Boyle",
         age: 37,
@@ -63,7 +63,7 @@ let usersArray = [{
         email: "terrelboyle@gmail.com",
     },
     {
-        id: 8,
+        id: 16,
         name: "Emmie",
         surname: "Schamberger",
         age: 60,
@@ -71,7 +71,7 @@ let usersArray = [{
         email: "emmieschamberg@gmail.com",
     },
     {
-        id: 9,
+        id: 77,
         name: "Adrian",
         surname: "Robinson",
         age: 57,
@@ -79,7 +79,7 @@ let usersArray = [{
         email: "adrianrobinson@gmail.com",
     },
     {
-        id: 10,
+        id: 74,
         name: "Alex",
         surname: "Jackson",
         age: 55,
@@ -87,7 +87,7 @@ let usersArray = [{
         email: "alexjackson@gmail.com",
     },
     {
-        id: 11,
+        id: 51,
         name: "Amy",
         surname: "Scott",
         age: 36,
@@ -95,7 +95,7 @@ let usersArray = [{
         email: "amyscott@gmail.com",
     },
     {
-        id: 12,
+        id: 64,
         name: "Andrew",
         surname: "Wright",
         age: 54,
@@ -103,7 +103,7 @@ let usersArray = [{
         email: "andrewwright@gmail.com",
     },
     {
-        id: 13,
+        id: 38,
         name: "Anna",
         surname: "Mitchell",
         age: 34,
@@ -111,7 +111,7 @@ let usersArray = [{
         email: "annamitchell@gmail.com",
     },
     {
-        id: 14,
+        id: 95,
         name: "Anna",
         surname: "Parker",
         age: 22,
@@ -119,7 +119,7 @@ let usersArray = [{
         email: "annaparker@gmail.com",
     },
     {
-        id: 15,
+        id: 2,
         name: "Brandon",
         surname: "Johnson",
         age: 63,
@@ -127,7 +127,7 @@ let usersArray = [{
         email: "brandonjohnson@gmail.com",
     },
     {
-        id: 16,
+        id: 11,
         name: "Chuck",
         surname: "Taylor",
         age: 55,
@@ -135,7 +135,7 @@ let usersArray = [{
         email: "chucktaylor@gmail.com",
     },
     {
-        id: 17,
+        id: 23,
         name: "Elisabeth",
         surname: "Robinson",
         age: 23,
@@ -143,7 +143,7 @@ let usersArray = [{
         email: "elisabethrobinson@gmail.com",
     },
     {
-        id: 18,
+        id: 36,
         name: "Eric",
         surname: "Adams",
         age: 45,
@@ -151,7 +151,7 @@ let usersArray = [{
         email: "ericadams@gmail.com",
     },
     {
-        id: 19,
+        id: 82,
         name: "Erica",
         surname: "Clark",
         age: 20,
@@ -159,7 +159,7 @@ let usersArray = [{
         email: "ericaclark@gmail.com",
     },
     {
-        id: 20,
+        id: 81,
         name: "Jacob",
         surname: "Smith",
         age: 56,
@@ -167,7 +167,7 @@ let usersArray = [{
         email: "jacomsmith@gmail.com",
     },
     {
-        id: 21,
+        id: 20,
         name: "Vincent",
         surname: "Lee",
         age: 48,
@@ -183,7 +183,7 @@ let usersArray = [{
         email: "victorialewis@gmail.com",
     },
     {
-        id: 23,
+        id: 99,
         name: "Stuart",
         surname: "Thomson",
         age: 38,
@@ -191,7 +191,7 @@ let usersArray = [{
         email: "stuartthomson@gmail.com",
     },
     {
-        id: 24,
+        id: 57,
         name: "Rachel",
         surname: "Thomas",
         age: 49,
@@ -199,7 +199,7 @@ let usersArray = [{
         email: "rachelthomas@gmail.com",
     },
     {
-        id: 25,
+        id: 79,
         name: "Peter",
         surname: "Nelson",
         age: 57,
@@ -207,7 +207,7 @@ let usersArray = [{
         email: "peternelson@gmail.com",
     },
     {
-        id: 26,
+        id: 38,
         name: "Maria",
         surname: "Lopez",
         age: 36,
@@ -215,7 +215,7 @@ let usersArray = [{
         email: "marialopez@gmail.com",
     },
     {
-        id: 27,
+        id: 30,
         name: "Lisa",
         surname: "Moore",
         age: 47,
@@ -223,7 +223,7 @@ let usersArray = [{
         email: "lisamoore@gmail.com",
     },
     {
-        id: 28,
+        id: 69,
         name: "Lindsay",
         surname: "Moore",
         age: 34,
@@ -231,7 +231,7 @@ let usersArray = [{
         email: "lindseymoore@gmail.com",
     },
     {
-        id: 29,
+        id: 5,
         name: "Kim",
         surname: "Anderson",
         age: 43,
@@ -239,7 +239,7 @@ let usersArray = [{
         email: "kimanderson@gmail.com",
     },
     {
-        id: 30,
+        id: 48,
         name: "Juan",
         surname: "Rodriguez",
         age: 35,
@@ -269,13 +269,8 @@ const renderOfHeader = function(trElement) {
     trElement.append(thElement);
 }
 
-const deleteObject = function(userobject, usersArray, element) {
-    usersArray.splice(userobject.id, 1);
-    for (const object of usersArray) {
-        if (object.id >= userobject.id) {
-            --object.id;
-        }
-    }
+const deleteObject = function(index, usersArray, element) {
+    usersArray.splice(index, 1);
     element.parentElement.remove();
     renderOfTable(usersArray, coll);
 }
@@ -360,7 +355,7 @@ const setup = (usersArray, coll, element) => {
                 object.renderOfObject(trElement, userobject);
             } else {
                 map.set(object.key, object.label)
-                object.renderOfButton(trElement, userobject, usersArray, element);
+                object.renderOfButton(trElement, index, usersArray, element);
             }
         }
         ++index;
