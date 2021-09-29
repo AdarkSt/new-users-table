@@ -269,16 +269,14 @@ const renderOfHeader = function(trElement) {
     trElement.append(thElement);
 }
 
-const deleteObject = function(index, usersArray, element) {
-        usersArray.splice(index, 1);
-        element.parentElement.remove();
-        renderOfTable(usersArray, coll);
-    }
-    /*
-    if (`${modifyingProperty}` in userobject) {
-        userobject[`${modifyingProperty}`] = valueOfModifyingProperty;
-    }
-    */
+
+const deleteObject = function(userobject, usersArray, element) {
+    usersArray.splice(usersArray.findIndex(item => item.id == userobject.id), 1);
+    element.parentElement.remove();
+    renderOfTable(usersArray, coll);
+}
+
+
 const editObject = function(userobject, usersArray, element) {
     let numberOfModifyingProperty = prompt('Please take a number of modifying property');
     let valueOfModifyingProperty = prompt('Please take a value of modifying property')
@@ -287,7 +285,7 @@ const editObject = function(userobject, usersArray, element) {
     renderOfTable(usersArray, coll);
 }
 
-const renderOfButton = function(trElement, index, userobject, usersArray, element, countOfButtons) {
+const renderOfButton = function(trElement, userobject, usersArray, element, countOfButtons) {
     let tdElement = document.createElement('td');
     for (let i = 0; i < countOfButtons; ++i) {
         let buttonElement = document.createElement('button');
@@ -296,7 +294,7 @@ const renderOfButton = function(trElement, index, userobject, usersArray, elemen
         tdElement.append(buttonElement);
         buttonElement.onclick = () => {
             if (buttonElement.textContent == "Delete") {
-                deleteObject(index, usersArray, element);
+                deleteObject(userobject, usersArray, element);
             } else if (buttonElement.textContent == "Edit") {
                 editObject(userobject, usersArray, element);
             }
@@ -368,7 +366,7 @@ const setup = (usersArray, coll, element) => {
                 object.renderOfObject(trElement, userobject);
             } else {
                 map.set(object.key, object.label)
-                object.renderOfButton(trElement, index, userobject, usersArray, element, 2);
+                object.renderOfButton(trElement, userobject, usersArray, element, 2);
             }
         }
         ++index;
