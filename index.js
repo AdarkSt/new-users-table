@@ -279,10 +279,16 @@ const deleteObject = function(userobject, usersArray, element) {
 
 const editObject = function(userobject, usersArray, element) {
     let numberOfModifyingProperty = prompt('Please take a number of modifying property');
-    let valueOfModifyingProperty = prompt('Please take a value of modifying property')
-    userobject[Object.keys(userobject)[numberOfModifyingProperty]] = valueOfModifyingProperty;
-    element.parentElement.remove();
-    renderOfTable(usersArray, coll);
+    if (numberOfModifyingProperty != null && numberOfModifyingProperty != '') {
+        let valueOfModifyingProperty = prompt('Please take a value of modifying property')
+        if (valueOfModifyingProperty != null) {
+            userobject[Object.keys(userobject)[numberOfModifyingProperty]] = valueOfModifyingProperty;
+            element.parentElement.remove();
+            renderOfTable(usersArray, coll);
+        }
+
+    }
+
 }
 
 const renderOfButton = function(trElement, userobject, usersArray, element, countOfButtons) {
